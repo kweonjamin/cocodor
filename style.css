@@ -1,3 +1,41 @@
-li{
-    list-style: none;
+.sns-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 135px;
+    margin-right: 165px;
+    align-items: center;
 }
+.sns-icon>li{
+    margin-right: 11px;
+}
+.main-logo{
+    display: flex;
+    justify-content: center;
+}
+.main-logo>h1>img{
+
+}
+.login-icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.login-icon>li{
+    margin-right: 25px;
+}
+.list>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+}
+.list>ul>li{
+    margin-right: 32px;
+    font-size: 14px;
+}
+.main-img>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
