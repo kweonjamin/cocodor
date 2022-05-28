@@ -1,3 +1,6 @@
+body{
+    background-color: #FBFBFB;
+}
 .sns-icon{
     display: flex;
     justify-content: flex-end;
@@ -13,7 +16,9 @@
     justify-content: center;
 }
 .main-logo>h1>img{
-
+    width: 364px;
+    height: 58px;
+    margin-bottom: 35px;
 }
 .login-icon{
     display: flex;
@@ -27,15 +32,238 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 19px;
 }
 .list>ul>li{
     margin-right: 32px;
     font-size: 14px;
+    margin-bottom: 80px;
 }
 .main-img>ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
- 
+.circle-icon>img{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.cocodor-text{
+    margin-top: 40px;
+    text-align: center;
+}
+.cocodor-text>h4{
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #222222;
+}
+.cocodor-text>p{
+    font-size: 14px;
+    color: #484848;
+    line-height: 17px;
+    margin-bottom: 50px;
+}
+.black{
+    width: 100%;
+    height: 11px;
+    background-color: #222222;
+}
+.category-text{
+    text-align: center;
+    margin-top: 40px;
+}
+.category-text>h2{
+    font-size: 56px;
+    color: #222222;
+    margin-bottom: 15px;
+}
+.category-text>p{
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 75px;
+}
+.category-main{
+    margin-bottom: 40px;
+}
+.category-main>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-main>ul>li{
+    width: 290px;
+    height: 215px;
+    background-color: #F0F0F0;
+    margin-right: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    position: relative;
+}
+.category-icon{
+    display: flex;
+}
+.category-icon>img{
+    width: 145px;
+    height: 181px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.category-icon>p{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+}
+.arrow-icon{
+    width: 16px;
+    height: 16px;
+    margin-left: 210px;
+    position: absolute;
+    top: 170px;
+}
+.smell-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smell-inner>img{
+    width: 409px;
+    height: 489px;
+}
+.smell-inner-text{
+    margin-top: 240px;
+}
+.smell-inner-text>h3{
+    font-size: 36px;
+    font-weight: bold;
+    color: #222222;
+}
+.smell-inner-text>p{
+    font-size: 16px;
+    color: #484848;
+    margin-top: 10px;
+    line-height: 18 px;
+}
+.smell-img>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.smell-img>ul>li{
+    margin-right: 30px;
+}
+.interior{
+    background-image: url('img/img\ \(1\)\ 1.png');
+    background-size: cover;
+    width: 100%;
+    height: 960px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.interior-text{
+    color: #F0F0F0;
+}
+.interior-text>h2{
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+.try-main-img{
+    background-image: url('img/Group\ 140.png');
+    width: 701px;
+    height: 567px;
+}
+.try-main-text{
+    text-align: right;
+}
+.try-main-text>h3{
+    font-size: 28px;
+    color: #484848;
+    margin-bottom: 10px;
+}
+.try-main-text>p{
+    font-size: 12px;
+    color: #666666;
+}
+.try-main-text{
+    margin-top: 40px;
+}
+.try-main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.try-4img{
+    display: flex;
+    margin-left: 54px;
+}
+.try-inner-img{
+    width: 205px;
+    height: 265px;
+    background-color: #F0F0F0;
+    margin-bottom: 28px;
+    margin-right: 33px;
+    border-radius: 16px 16px 16px 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.try-inner-img>img{
+    margin: 0 auto;
+}
+.try-inner-text>h3{
+    font-size: 16px;
+    color: #222222;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.try-inner-text>p{
+    font-size: 10px;
+    color: #484848;
+    line-height: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.safe-img{
+    position: relative;
+}
+.safe-img>img{
+    position: absolute;
+    left: 140px;
+    bottom: 20px;
+}
+footer{
+    width: 1216px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.brand-footer{
+    display: flex;
+}
+.brand-footer>ul{
+    margin-right: 50px;
+}
+.brand-footer>ul>li{
+    font-size: 14px;
+    color: #666666;
+    line-height: 28px;
+}
+.brand-footer>ul>li>span{
+    font-size: 20px;
+}
+.brand-footer>span{
+    font-size: 20px;
+    color: #666666;
+    margin-top: 10px;
+}
+.company-footer1{
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+}
+.company-footer2>ul{
+    display: flex;
+}
+.company-footer2>ul>li{
+    margin-right: 26px;
+    font-size: 14px;
+    color: #666666;
+}
