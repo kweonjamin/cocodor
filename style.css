@@ -43,6 +43,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+.main-img>ul>li>a>h3{
+    text-align: center;
+    color: #413F3F;
+    font-size: 20px;
+}
+.signature-text{
+    font-weight: bold;
+}
 .circle-icon>img{
     margin: 0 auto;
     margin-top: 40px;
@@ -160,13 +168,41 @@ body{
     height: 960px;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 .interior-text{
     color: #F0F0F0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 30%;
+    width: 470px;
 }
 .interior-text>h2{
     font-size: 56px;
     margin-bottom: 15px;
+}
+.interior-text>p{
+    text-align: right;
+    font-size: 16px;
+}
+.interior-inner-text{
+    color: #F0F0F0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 36%;
+}
+.interior-inner-text>h3{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 16px;
+}
+.interior-inner-text>p{
+    text-align: right;
+    font-size: 16px;
+    line-height: 18px;
 }
 .try-main-img{
     background-image: url('img/Group\ 140.png');
@@ -231,20 +267,19 @@ body{
     bottom: 20px;
 }
 footer{
-    width: 1216px;
-    margin: 0 auto;
-    margin-top: 80px;
+    background-color: #F0F0F0;
 }
 .brand-footer{
     display: flex;
 }
 .brand-footer>ul{
     margin-right: 50px;
+    margin-top: 80px;
 }
 .brand-footer>ul>li{
     font-size: 14px;
     color: #666666;
-    line-height: 28px;
+    line-height: 50px;
 }
 .brand-footer>ul>li>span{
     font-size: 20px;
@@ -257,7 +292,7 @@ footer{
 .company-footer1{
     font-size: 14px;
     color: #666666;
-    line-height: 30px;
+    line-height: 50px;
 }
 .company-footer2>ul{
     display: flex;
@@ -266,4 +301,30 @@ footer{
     margin-right: 26px;
     font-size: 14px;
     color: #666666;
+}
+.company-footer3>ul{
+    display: flex;
+    line-height: 50px;
+}
+.company-footer3>ul>li{
+    margin-right: 26px;
+    font-size: 14px;
+    color: #666666;
+}
+.company-footer4{
+    font-size: 14px;
+    color: #666666;
+}
+.company-footer5>ul{
+    display: flex;
+    line-height: 60px;
+}
+.company-footer5>ul>li{
+    margin-right: 26px;
+    font-size: 12px;
+    color: #666666;
+}
+.footer-main{
+    width: 1220px;
+    margin: 0 auto;
 }
