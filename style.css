@@ -1,6 +1,18 @@
 body{
     background-color: #FBFBFB;
 }
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h2{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h3{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h4{
+    font-family: 'Nanum Gothic', sans-serif;
+}
 .sns-icon{
     display: flex;
     justify-content: flex-end;
@@ -66,6 +78,7 @@ body{
     margin-bottom: 15px;
     font-size: 24px;
     color: #222222;
+    font-weight: bold;
 }
 .cocodor-text>p{
     font-size: 14px;
@@ -207,7 +220,7 @@ body{
     font-size: 16px;
     color: #484848;
     margin-top: 10px;
-    line-height: 18px;
+    line-height: 20px;
 }
 .smell-img>ul{
     display: flex;
@@ -237,7 +250,7 @@ body{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 30%;
-    width: 470px;
+    width: 438px;
 }
 .interior-text>h2{
     font-size: 56px;
@@ -305,8 +318,9 @@ body{
     margin-bottom: 10px;
 }
 .try-main-text>p{
-    font-size: 12px;
+    font-size: 14px;
     color: #666666;
+    line-height: 18px;
 }
 .try-main-text{
     margin-top: 40px;
@@ -339,9 +353,9 @@ body{
     margin-left: 20px;
 }
 .try-inner-text>p{
-    font-size: 10px;
+    font-size: 12px;
     color: #484848;
-    line-height: 12px;
+    line-height: 15px;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -350,11 +364,12 @@ body{
 }
 .safe-img>img{
     position: absolute;
-    left: 140px;
-    bottom: 20px;
+    left: 150px;
+    bottom: 40px;
 }
 footer{
     background-color: #F0F0F0;
+    overflow: hidden;
 }
 .brand-footer{
     display: flex;
@@ -375,6 +390,12 @@ footer{
     font-size: 20px;
     color: #666666;
     margin-top: 10px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.brand-footer>ul>li>span{
+    text-decoration: underline;
+    text-underline-position: under;
 }
 .company-footer1{
     font-size: 14px;
@@ -385,7 +406,7 @@ footer{
     display: flex;
 }
 .company-footer2>ul>li{
-    margin-right: 26px;
+    margin-right: 20px;
     font-size: 14px;
     color: #666666;
 }
@@ -435,9 +456,6 @@ footer{
     .interior-text{
         left: 250px;
     }
-    .interior-text>p{
-        text-align: center;
-    }
     .interior-inner-text{
         left: 250px;
     }
@@ -477,7 +495,7 @@ footer{
     .arrow-img2>img{
         position: absolute;
         left: 70px;
-        bottom:50px;
+        bottom: 50px;
     }
 }
 @media screen and (max-width:620px) {
@@ -493,5 +511,29 @@ footer{
     }
     .smell-inner-text>p{
         display: none;
+    }
+}
+@media screen and (max-width:880px) {
+    .try-main-img{
+        display: none;
+    }
+    .try-inner-img{
+        width: 257px;
+        height: 332px;
+    }
+    .try-inner-img>img{
+        width: 209px;
+        height: 205px;
+    }
+    .try-inner-text>h3{
+        font-size: 22px;
+    }
+    .try-inner-text>p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .safe-img>img{
+        left: 180px;
+        bottom: 56px;
     }
 }
