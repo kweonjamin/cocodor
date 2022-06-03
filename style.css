@@ -104,16 +104,6 @@ header{
     right: -300px;
     opacity: 90%;
 }
-.slide{
-    width: 289px;
-    height: 104px;
-    z-index: 1;
-    transition: all .35s;
-    position: fixed;
-    bottom: 0;
-    right: -289px;
-    background-color: #484848;
-}
 .slidebar>ul{
     margin-top: 60px;
     margin-left: 10px;
@@ -285,20 +275,6 @@ header{
     margin-left: 200px;
     position: absolute;
     top: 170px;
-}
-#up-menu{
-    display: none;
-}
-#up-menu+label{
-    display: block;
-    cursor: pointer;
-    position: relative;
-}
-#up-menu+label>img{
-    display: block;
-}
-#up-menu:checked+label{
-    z-index: 2;
 }
 .arrow-img1{
     display: none;
