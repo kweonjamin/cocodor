@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            width: 300px;
+            height: 150px;
+            font-size: 56px;
+            text-align: center;
+            line-height: 150px;
+            border: 5px solid red;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        
+        .container>ul{
+            transition: 1s;
+            /* width: 1200px; */
+            height: 150px;
+            display: flex;
+        }
+
+        .container li {
+            width: 300px;
+            height: 150px;
+        }
+
+        .slider1{background-color: aqua;}
+        .slider2{background-color: blue;}
+        .slider3{background-color: blueviolet;}
+        .slider4{background-color: brown;}
+        .slider5{background-color: aquamarine;}
+
+        .buttons {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-container{
+            width: 100px;
+            height: 20px;
+            padding: 5px;
+            /* background-color: #00000022; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .div-button{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #00000022;
+        }
+
+        .active{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="slider">
+            <li class="slider1">1</li>
+            <li class="slider2">2</li>
+            <li class="slider3">3</li>
+            <li class="slider4">4</li>
+            <li class="slider5">5</li>
+        </ul>
+    </div>
+    <div class="buttons">
+        <button>이전</button>
+        <div class="button-container">
+
+        </div>
+        <button>다음</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelector('.buttons');
+        const container = document.querySelector('.container');
+        const slider = document.querySelector('.slider');
+        const buttonContainer =  document.querySelector('.button-container');
+        const sliderWidht = 300;
+        const sliderLength = slider.childElementCount; //자식 요소의 개수를 반환하는 속성
+        let moveCheck = true;  //움직임이 완료 되었는가?
+
+        for(let i = 0 ; i < sliderLength ; i ++){ //슬라이더 갯수만큼 반복
+            const makeDiv = document.createElement('div'); //div 태그 생성
+            makeDiv.classList.add('div-button'); //생성한 div태그에 button 이라는 클래스 부여
+            buttonContainer.appendChild(makeDiv); //버튼 컨테이너에 방금 만든 노드 자식요소로 추가
+            makeDiv.addEventListener('click', ()=>{
+                index = i + 1;
+                moveSlider(1000);
+            })
+
+        }
+        buttonContainer.children[0].classList.add('active'); // 첫번째 버튼 활성화
+
+
+
+        const first = slider.firstElementChild.cloneNode(true);
+        const last = slider.lastElementChild.cloneNode(true);
+
+        slider.appendChild(first);
+        slider.insertBefore(last, slider.firstElementChild);
+
+        slider.style.width = slider.childElementCount * sliderWidht + 'px';
+
+        let index = 1 ;
+        container.children[0].style.transform= 'translateX(-' + (index*300) + 'px)';
+
+        buttons.children[0].addEventListener('click',prev);
+        buttons.children[2].addEventListener('click',next);
+
+        function prev(){
+            if(moveCheck){
+
+                moveCheck = false;
+                console.log(moveCheck);
+                index--;
+                console.log(index); 
+                setTimeout(()=>{
+                    if(index === 0){
+                        index=slider.childElementCount-2;
+                        moveSlider(0);
+                    }
+                    moveCheck = true;
+                    
+                    console.log(index + "," + moveCheck); 
+                },1000)
+                moveSlider(1000);
+            }
+        }
+
+        function next(){
+            if(moveCheck){
+                moveCheck = false;
+                index++;
+                console.log(index); 
+                setTimeout(()=>{
+                    if(index === slider.childElementCount-1){
+                        index=1;
+                        moveSlider(0);
+                    }
+                    console.log(index); 
+                    moveCheck = true ;
+                },1000)
+                moveSlider(1000);
+            }
+        }
+        function updateButtons(){
+            for( let i = 0 ; i < sliderLength ; i ++ ){
+                buttonContainer.children[i].classList.remove('active');
+            }
+            if(index === 0 ){
+                buttonContainer.children[sliderLength-1].classList.add('active');
+            }else if(index === sliderLength+1){
+                buttonContainer.children[0].classList.add('active');
+            }else{
+                buttonContainer.children[index-1].classList.add('active');
+            }
+        }
+        function moveSlider(time){
+            slider.style.transition = time + 'ms';
+            container.children[0].style.transform= 'translateX(-' + (index*300) + 'px)';
+
+            updateButtons();
+        }
+    </script>
+</body>
+</html>
