@@ -46,14 +46,46 @@
                         <img src="img/Vector-1.png" alt="search">
                     </a>
                 </li>
-                <li class="menu-icon">
-                   <a href="">
-                       <img src="img/bx_menu.png" alt="">
-                   </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+                <div class="navBox">
+                    <img class="iconBtn" id="menuBtn" src="img/bx_menu.png" />
+                </div>
+                  <div class="menuWrap">
+                    <nav id="menu">
+                      <ul class="menuList">
+                        <li class="listStyle">
+                            <a href="#">기확전</a>
+                        </li>
+                        <li class="listStyle">
+                          <a href="#">디퓨저</a>
+                        </li>
+                        <li class="listStyle">
+                          <a href="#">캔들</a>
+                        </li>
+                        <li class="listStyle"><a href="">DIY</a></li>
+                        <li class="listStyle"><a href="">플라워</a></li>
+                        <li class="listStyle"><a href="">향기</a></li>
+                        <li class="listStyle"><a href="">대량&답레품</a></li>
+                        <li class="listStyle"><a href="">B2B</a></li>
+                      </ul>
+                    </nav>
+                    <hr>
+                    <nav id="menu">
+                        <ul class="menuList">
+                          <li class="listStyle">
+                              <a href="#">마이페이지</a>
+                          </li>
+                          <li class="listStyle">
+                            <a href="#">커뮤니티</a>
+                          </li>
+                          <li class="listStyle">
+                            <a href="#">이벤트/기획전</a>
+                          </li>
+                          <li class="listStyle"><a href="">브랜드</a></li>
+                        </ul>
+                      </nav>
+                  </div>
+                    </div>
+                </header>
     <div class="main">
         <div class="main-logo">
             <h1>
@@ -116,9 +148,9 @@
             <ul>
                 <li>
                     <div class="category-icon">
-                        <button class="arrow">
+                        <div class="arrow-img">
                             <img src="img/arrow1.png" alt="">
-                        </button>
+                        </div>
                         <img src="img/b_001.png" alt="signature">
                         <p>시그니처</p>
                     </div>
@@ -143,9 +175,9 @@
                     <div class="category-icon2">
                         <img src="img/[removal.ai]_tmp-62913d9f50c74.png" alt="black">
                         <p>블랙에디션</p>
-                        <button class="next">
+                        <div class="arrow-img3">
                             <img src="img/arrow.png" alt="">
-                        </button>
+                        </div>
                     </div>
                     <div class="arrow-icon">
                         <a href="">
@@ -181,9 +213,9 @@
             <ul>
                 <li>
                     <div class="category-icon">
-                        <button class="arrow">
+                        <div class="arrow-img">
                             <img src="img/arrow1.png" alt="">
-                        </button>
+                        </div>
                         <img src="img/b_007 1.png" alt="candle warmer">
                         <p>캔들워머</p>
                     </div>
@@ -208,9 +240,9 @@
                     <div class="category-icon4">
                         <img src="img/[removal.ai]_tmp-62913dd2605f8.png" alt="Present">
                         <p>선물세트</p>
-                        <button class="next">
+                        <div class="arrow-img3">
                             <img src="img/arrow.png" alt="">
-                        </button>
+                        </div>
                     </div>
                     <div class="arrow-icon">
                         <a href="">
@@ -512,6 +544,40 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document
+            .querySelector("#menuBtn")
+            .addEventListener("click", function (e) {
+              if (document.querySelector(".menuWrap").classList.contains("on")) {
+                //메뉴 slide
+                document.querySelector(".menuWrap").classList.remove("on");
+                document.getElementById("menuBtn").src = "./menuBtn.png";
+                document.querySelector("#menuBtn").classList.remove("btnRotate");
+                document.querySelector("#dimmed").remove();
+              } else {
+                //메뉴 slideIn
+                document.querySelector(".menuWrap").classList.add("on");
+                document.getElementById("menuBtn").src = "./cross.png";
+                document.querySelector("#menuBtn").classList.add("btnRotate");
+                let div = document.createElement("div");
+                div.id = "dimmed";
+                document.body.append(div);
+  
+                //페이지 스크롤 락  모바일 이벤트 차단
+                document
+                  .querySelector("#dimmed")
+                  .addEventListener(
+                    "scroll touchmove touchend mousewheel",
+                    function (e) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      return false;
+                    }
+                  );
+              }
+            });
+        });
+      </script>
 </body>
 </html>
-<!-- 슬라이드를 하려면 앞뒤로 이미지를 복붙해야함 -->
