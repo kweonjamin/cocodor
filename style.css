@@ -44,8 +44,55 @@ header{
     width: 20px;
     height: 20px;
 }
-.menu-icon{
-    display: none;
+.navBox {
+    display: flex;
+}
+.iconBtn {
+    width: 24px;
+    cursor: pointer;
+}
+.menuWrap.on {
+    right: 0;
+}
+.menuWrap {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 400;
+    width: 300px;
+    height: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+    background-color: #222222;
+}
+#menuBtn {
+    width: 24px;
+    z-index: 401;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.btnRotate {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.listStyle>a{
+    color: #F0F0F0;
+    line-height: 40px;
+    font-size: 16px;
 }
 .main-logo>h1>img{
     margin: 0 auto;
@@ -99,10 +146,6 @@ header{
     width: 100%;
     height: 11px;
     background-color: #222222;
-}
-button{
-    cursor: pointer;
-    border: none;
 }
 .category-text{
     text-align: center;
@@ -196,10 +239,10 @@ button{
     color: #222222;
     font-weight: bold;
 }
-.arrow>img{
+.arrow-img>img{
     display: none;
 }
-.next>img{
+.arrow-img3>img{
     display: none;
 }
 .arrow-icon{
@@ -455,8 +498,10 @@ footer{
     .login-icon{
         margin-right: 10px;
     }
-    .menu-icon{
-        display: block;
+}
+@media screen and (min-width:820px) {
+    .navBox{
+        display: none;
     }
 }
 @media screen and (max-width:700px) {
@@ -482,14 +527,14 @@ footer{
     }
 }
 @media screen and (max-width:855px) {
-    .arrow>img{
+    .arrow-img>img{
         display:inline;
         position: absolute;
         transform: translate(0,-50%);
         top: 50%;
         left: 5px;
     }
-    .next>img{
+    .arrow-img3>img{
         display:inline;
         position: absolute;
         transform: translate(0,-50%);
