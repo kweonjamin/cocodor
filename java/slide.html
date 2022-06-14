@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .container{
+            width: 300px;
+            height: 150px;
+            font-size: 56px;
+            text-align: center;
+            line-height: 150px;
+            border: 5px solid red;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .slider{
+            /* width: 1200px; */
+            transition: 1s;
+            height: 150px;
+            display: flex;
+        }
+        .slider>li{
+            width: 300px;
+            height: 150px;
+        }
+        .slider1{background-color: aqua;}
+        .slider2{background-color: blue;}
+        .slider3{background-color: blueviolet;}
+        .slider4{background-color: brown;}
+        .slider5{background-color: aquamarine;}
+
+        .buttons{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="slider">
+            <li class="slider1">1</li>
+            <li class="slider2">2</li>
+            <li class="slider3">3</li>
+            <li class="slider4">4</li>
+            <li class="slider5">5</li>
+        </ul>
+    </div>
+    <div class="buttons">
+        <button>이전</button>
+        <button>다음</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelector('.buttons');
+        const container = document.querySelector('.container');
+        const slider = document.querySelector('.slider');
+        const sliderwidth = 300;
+
+
+        const first = slider.firstElementChild.cloneNode(true);
+        const last = slider.lastElementChild.cloneNode(true);
+        
+        slider.appendChild(first);
+        slider.insertBefore(last,slider.firstElementChild);
+
+        console.log(slider.childElementCount);
+        slider.style.width = slider.childElementCount*sliderwidth + 'px';
+
+        let index = 0 ;
+
+        buttons.children[0].addEventListener('click',prev);
+        buttons.children[1].addEventListener('click',next);
+
+
+        function prev(){
+            index --;
+            console.log(index);
+
+            setTimeout(()=>{
+                if(index<=0){
+                    index=slider.childElementCount-2;
+                    moveslider(0);
+                }
+                console.log(index);
+
+            },1000)
+
+           moveslider(1000);
+        }
+
+        function next() {
+            index ++;
+
+            // if(index===slider.childElementCount-1)
+            //     index=1;
+
+            console.log(index);
+            // container.children[0].style.transform = 'translate(-'+(index*300) + 'px)'
+
+            setTimeout(()=>{
+                if(index>=slider.childElementCount-1){
+                    index=1;
+                    moveslider(0);
+                }
+                console.log(index);
+
+            },1000)
+
+           moveslider(1000);
+        }
+
+        function moveslider(time){
+            slider.style.tansition = time + 'ms';
+            container.children[0].style.transform = 'translateX(-' + (index*300) + 'px)';
+        }
+    </script>
+</body>
+</html>
