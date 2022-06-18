@@ -49,7 +49,7 @@
                 <div class="navBox">
                     <img class="iconBtn" id="menuBtn" src="img/bx_menu.png" />
                 </div>
-                  <div class="menuWrap">
+                <div class="menuWrap">
                     <nav id="menu">
                       <ul class="menuList">
                         <li class="listStyle">
@@ -82,9 +82,8 @@
                           </li>
                           <li class="listStyle"><a href="">브랜드</a></li>
                         </ul>
-                      </nav>
-                  </div>
-                    </div>
+                    </nav>
+                </div>
                 </header>
     <div class="main">
         <div class="main-logo">
@@ -638,13 +637,13 @@
               if (document.querySelector(".menuWrap").classList.contains("on")) {
                 //메뉴 slide
                 document.querySelector(".menuWrap").classList.remove("on");
-                document.getElementById("menuBtn").src = "./menuBtn.png";
+                document.getElementById("menuBtn").src = "img/bx_menu.png";
                 document.querySelector("#menuBtn").classList.remove("btnRotate");
                 document.querySelector("#dimmed").remove();
               } else {
                 //메뉴 slideIn
                 document.querySelector(".menuWrap").classList.add("on");
-                document.getElementById("menuBtn").src = "./cross.png";
+                document.getElementById("menuBtn").src = "img/x.png";
                 document.querySelector("#menuBtn").classList.add("btnRotate");
                 let div = document.createElement("div");
                 div.id = "dimmed";
