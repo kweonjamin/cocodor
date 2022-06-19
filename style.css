@@ -13,14 +13,29 @@ h3{
 h4{
     font-family: 'Nanum Gothic', sans-serif;
 }
-.arrow-wrrap{
+.button{
+    font-size:20px;
     position: absolute;
-    width: 290px;
-    height: 160px;
-    background-color: aqua;
-    z-index: 2;
-    bottom : -29px;
-    right: -74px;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+}
+#drop-content{
+    position: absolute;
+    z-index: 1;
+}
+#drop-content p{
+    width: 291px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
 }
 header{
     width: 100%;
@@ -187,6 +202,33 @@ hr{
     margin-bottom: 30px;
     position: relative;
 }
+.button{
+    font-size:20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+    left: 190px;
+    bottom: 20px;
+}
+#drop-content{
+    position: absolute;
+    z-index: 1;
+}
+#drop-content p{
+    width: 291px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+}
 .category-icon{
     display: flex;
 }
@@ -259,7 +301,7 @@ hr{
     height: 16px;
     margin-left: 200px;
     position: absolute;
-    top: 170px;
+    top: 110px;
     z-index: 10;
 }
 .arrow-img1{
