@@ -217,7 +217,7 @@ hr{
     z-index: 1;
 }
 #drop-content p{
-    width: 291px;
+    width: 290px;
     height: 110px;
     display:block;
     font-size: 14px;
@@ -228,6 +228,19 @@ hr{
     font-weight: bold;
     position: absolute;
     bottom: -20px;
+}
+#drop-content1 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
 }
 .category-icon{
     display: flex;
