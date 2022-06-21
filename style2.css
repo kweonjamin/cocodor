@@ -178,6 +178,137 @@ hr{
     margin-bottom: 30px;
     position: relative;
 }
+.button{
+    font-size:20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+    left: 190px;
+    bottom: 20px;
+}
+#drop-content{
+    position: absolute;
+    z-index: 1;
+}
+#drop-content p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+}
+#drop-content1 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content2 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content3 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content4 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content5 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content6 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content7 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content8 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
 .category-icon{
     display: flex;
 }
@@ -244,13 +375,6 @@ hr{
 }
 .arrow-img3>img{
     display: none;
-}
-.arrow-icon{
-    width: 16px;
-    height: 16px;
-    margin-left: 200px;
-    position: absolute;
-    top: 170px;
 }
 .arrow-img1{
     display: none;
@@ -732,6 +856,55 @@ footer{
     .category-main>ul>li{
         width: 250px;
         height: 180px;
+    }
+    #drop-content p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+        bottom: -8px
+    }
+    #drop-content1 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content2 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content3 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content4 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content5 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content6 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content7 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
     }
     .category-icon>img{
         width: 105px;
