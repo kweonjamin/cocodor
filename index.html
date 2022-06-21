@@ -170,8 +170,8 @@
                         <p>화이트라벨</p>
                     </div>
                     <div class="dropdown">
-                        <button onclick="dp_menu()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
-                        <div style="display: none;" id="drop-content">
+                        <button onclick="dp_menu1()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
+                        <div style="display: none;" id="drop-content1">
                             <p>
                                 화이트 라벨은 화이트 라벨이 붙어있는 것이
                                 <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
@@ -612,6 +612,16 @@
         });
         function dp_menu(){
             let click = document.getElementById("drop-content");
+            if(click.style.display === "none"){
+                click.style.display = "block";
+ 
+            }else{
+                click.style.display = "none";
+ 
+            }
+        }
+        function dp_menu1(){
+            let click = document.getElementById("drop-content1");
             if(click.style.display === "none"){
                 click.style.display = "block";
  
