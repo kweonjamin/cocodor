@@ -292,6 +292,110 @@ hr{
     position: absolute;
     bottom: -1px;
 }
+#up-content p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content1 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content2 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content3 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content4 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content5 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content6 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content7 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
 .category-icon{
     display: flex;
 }
@@ -727,10 +831,49 @@ footer{
         height: 152px;
     }
     .category-main2>ul>li{
-        width: 260px;
+        width: 232px;
         height: 188px;
     }
-}
+    #up-content p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content1 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content2 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content3 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content4 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content5 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content6 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content7 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
 @media screen and (max-width:630px) {
     .smell-inner-text{
         position: relative;
