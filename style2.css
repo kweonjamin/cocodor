@@ -188,10 +188,6 @@ hr{
     left: 190px;
     bottom: 20px;
 }
-#drop-content{
-    position: absolute;
-    z-index: 1;
-}
 #drop-content p{
     width: 290px;
     height: 110px;
@@ -203,7 +199,7 @@ hr{
     line-height: 30px;
     font-weight: bold;
     position: absolute;
-    bottom: -20px;
+    bottom: -1px;
 }
 #drop-content1 p{
     width: 290px;
@@ -284,19 +280,6 @@ hr{
     bottom: -1px;
 }
 #drop-content7 p{
-    width: 290px;
-    height: 110px;
-    display:block;
-    font-size: 14px;
-    background-color: #dadada;
-    color: #000000;
-    text-align: center;
-    line-height: 30px;
-    font-weight: bold;
-    position: absolute;
-    bottom: -1px;
-}
-#drop-content8 p{
     width: 290px;
     height: 110px;
     display:block;
@@ -862,7 +845,6 @@ footer{
         height: 100px;
         font-size: 12px;
         line-height: 30px;
-        bottom: -8px
     }
     #drop-content1 p{
         width: 250px;
