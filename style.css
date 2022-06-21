@@ -13,34 +13,21 @@ h3{
 h4{
     font-family: 'Nanum Gothic', sans-serif;
 }
-.button{
-    font-size:20px;
-    position: absolute;
-    z-index: 10;
-    cursor: pointer;
-    border: none;
-    background-color:transparent;
-}
-#drop-content{
-    position: absolute;
-    z-index: 1;
-}
-#drop-content p{
-    width: 291px;
-    height: 110px;
-    display:block;
-    font-size: 14px;
-    background-color: #dadada;
-    color: #000000;
-    text-align: center;
-    line-height: 30px;
-    font-weight: bold;
-    position: absolute;
-}
 header{
     width: 100%;
     height: 60px;
     background-color: #222222;
+}
+.main-img{
+    width: 300px;
+    margin: 0 auto;
+}
+.main-img{
+    margin: 0 auto;
+}
+.buttons{
+    display: flex;
+    border: none;
 }
 .main-header{
     display: flex;
@@ -132,23 +119,37 @@ hr{
     margin-right: 32px;
     font-size: 14px;
 }
-.main-img>ul{
+.slider>ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
 }
-.main-img>ul>li>a>h3{
+.slider>ul>li>a>h3{
     text-align: center;
     color: #413F3F;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.main-img>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .signature-text{
     font-weight: bold;
 }
-.circle-icon>img{
-    margin: 0 auto;
-    margin-top: 40px;
+.signature-img>a>img{
+    width: 279px;
+    height: 380px;
+}
+.flower-img>a>img{
+    width: 206px;
+    height: 228px;
+}
+.Blackedition-img>a>img{
+    width: 144px;
+    height: 235px;
 }
 .cocodor-text{
     margin-top: 40px;
@@ -212,23 +213,6 @@ hr{
     left: 190px;
     bottom: 20px;
 }
-#drop-content{
-    position: absolute;
-    z-index: 1;
-}
-#drop-content10 p{
-    width: 290px;
-    height: 110px;
-    display:block;
-    font-size: 14px;
-    background-color: #dadada;
-    color: #000000;
-    text-align: center;
-    line-height: 30px;
-    font-weight: bold;
-    position: absolute;
-    bottom: -20px;
-}
 #drop-content p{
     width: 290px;
     height: 110px;
@@ -240,9 +224,191 @@ hr{
     line-height: 30px;
     font-weight: bold;
     position: absolute;
-    bottom: -20px;
+    bottom: -1px;
 }
 #drop-content1 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content2 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content3 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content4 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content5 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content6 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#drop-content7 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content1 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content2 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content3 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content4 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content5 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content6 p{
+    width: 290px;
+    height: 110px;
+    display:block;
+    font-size: 14px;
+    background-color: #dadada;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1px;
+}
+#up-content7 p{
     width: 290px;
     height: 110px;
     display:block;
@@ -322,19 +488,68 @@ hr{
 .arrow-img3>img{
     display: none;
 }
-.arrow-icon{
-    width: 16px;
-    height: 16px;
-    margin-left: 200px;
-    position: absolute;
-    top: 110px;
-    z-index: 10;
-}
-.arrow-img1{
+.category-main2{
     display: none;
 }
-.arrow-img2{
-    display: none;
+.category-main2>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-main2>ul>li{
+    width: 290px;
+    height: 215px;
+    background-color: #F0F0F0;
+    margin-right: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    position: relative;
+}
+.category-img2{
+    display: flex;
+}
+.category-img3{
+    display: flex
+}
+.category-img2>img{
+    width: 120px;
+    height: 181px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.category-img3>img{
+    width: 157px;
+    height: 177px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.category-img2>p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 60px;
+}
+.category-img3>p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 60px;
+}
+.category-img>p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 60px;
+}
+.category-img>img{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.category-img{
+    display: flex;
 }
 .smell-inner{
     display: flex;
@@ -367,6 +582,35 @@ hr{
 }
 .smell-img>ul>li>a>p{
     text-align: center;
+}
+.Woody-img{
+    
+}
+.Fresh-img{
+    margin-top: 20px;
+}
+.fruity-img>a>img{
+    width: 116px;
+    height: 88px;
+    margin-top: 20px;
+}
+.CottonMusk-img>a>img{
+    width: 110px;
+    height: 98px;
+    margin-bottom: 10px;
+}
+.Fresh-img>a>img{
+    width: 86px;
+    height: 78px;
+}
+.Woody-img>a>img{
+    width: 104px;
+    height: 94px;
+}
+.Herbal-img>a>img{
+    width: 58px;
+    height: 92px;
+    margin-bottom: 5px;
 }
 .interior{
     background-image: url('img/img\ \(1\)\ 1.png');
@@ -604,20 +848,79 @@ footer{
         font-size: 46px;
     }
 }
-@media screen and (max-width:855px) {
-    .arrow-img>img{
-        display:inline;
-        position: absolute;
-        transform: translate(0,-50%);
-        top: 50%;
-        left: 5px;
+@media screen and (max-width:780px) {
+    .category-main2{
+        display: block;
     }
-    .arrow-img3>img{
-        display:inline;
-        position: absolute;
-        transform: translate(0,-50%);
-        top: 50%;
-        left: 225px;
+    .category-main{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .category-img>p{
+        font-size: 14px;
+    }
+    .category-img2>p{
+        font-size: 14px;
+    }
+    .category-img3>p{
+        font-size: 14px;
+    }
+    .category-img>img{
+        width: 121px;
+        height: 138px;
+    }
+    .category-img2>img{
+        width: 106px;
+        height: 158px;
+    }
+    .category-img3>img{
+        width: 144px;
+        height: 152px;
+    }
+    .category-main2>ul>li{
+        width: 232px;
+        height: 188px;
+    }
+    #up-content p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content1 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content2 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content3 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content4 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content5 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content6 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
+    }
+    #up-content7 p{
+        width: 232px;
+        height: 100px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width:630px) {
@@ -634,44 +937,35 @@ footer{
     .smell-img>ul>li{
         margin-right: 16px;
     }
-    .herbal-img{
-        width: 96px;
-        height: 90px;
-    }
     .smell-inner>a>img{
         width: 411px;
         height: 437px;
     }
-    .arrow-img1{
-        display: inline;
+    .Fresh-img{
+        margin-top: 15px;
     }
-    button{
-        border: none;
-        cursor: pointer;
-        width: 33px;
-        position: relative;
+    .fruity-img>a>img{
+        width: 96px;
+        height: 71px;
     }
-    .arrow-img1>button>img{
-        position: absolute;
-        transform: translate(0,-50%);
-        top: 50px;
-        left:-5px;
+    .CottonMusk-img>a>img{
+        width: 80px;
+        height: 73px;
     }
-    .arrow-img2{
-        display: inline;
-        position: relative;
+    .Fresh-img>a>img{
+        width: 73px;
+        height: 68px;
     }
-    .arrow-img2>img{
-        position: absolute;
-        left: 70px;
-        bottom: 50px;
+    .Woody-img>a>img{
+        width: 100px;
+        height: 92px;
+    }
+    .Herbal-img>a>img{
+        width: 54px;
+        height: 81px;
     }
 }
 @media screen and (max-width:625px) {
-    .herbal-img{
-        width: 76px;
-        height: 70px;
-    }
     .smell-img>ul>li{
         margin-right: 10px;
     }
@@ -729,6 +1023,54 @@ footer{
         width: 250px;
         height: 180px;
     }
+    #drop-content p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content1 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content2 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content3 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content4 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content5 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content6 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    #drop-content7 p{
+        width: 250px;
+        height: 100px;
+        font-size: 12px;
+        line-height: 30px;
+    }
     .category-icon>img{
         width: 105px;
         height: 157px;
@@ -769,5 +1111,19 @@ footer{
     .arrow-icon{
         top: 150px;
         right: 50px;
+    }
+}
+@media screen and (max-width:640px) {
+    .signature-img>a>img{
+        width: 206px;
+        height: 283px;
+    }
+    .flower-img>a>img{
+        width: 153px;
+        height: 170px;
+    }
+    .Blackedition-img>a>img{
+        width: 108px;
+        height: 176px;
     }
 }
