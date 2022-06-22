@@ -7,7 +7,7 @@
     user-scaleable="yes">
     <title>cocodor</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -108,22 +108,22 @@
         <div class="main-img">
             <div class="slider">
                 <ul class="slider-box">
-                    <li class="flower-img">
-                        <a href="">
-                            <img src="img/[removal 36.png" alt="flower"> 
-                            <h3>Flower</h3>
-                        </a>
-                    </li>
-                    <li class="signature-img">
+                    <li class="slidecontent1">
                         <a href="">
                             <img src="img/[removal 37.png" alt="signature">
                             <h3 class="signature-text">Signature</h3>
                         </a>
                     </li>
-                    <li class="Blackedition-img">
+                    <li class="slidecontent2">
                         <a href="">
                             <img src="img/[removal 35.png" alt="blackedition">
                             <h3 >Black edition</h3>
+                        </a>
+                    </li>
+                    <li class="slidecontent3">
+                        <a href="">
+                            <img src="img/[removal 36.png" alt="flower"> 
+                            <h3>Flower</h3>
                         </a>
                     </li>
                 </ul>
@@ -131,9 +131,9 @@
             <div class="buttons">
                 <button onclick="slideToLeft()"><img src="img/play2.png" alt=""></button>
                 <ul class=radio-container>
-                    <div class="round-button">1</div>
-                    <div class="round-button">2</div>
-                    <div class="round-button">3</div>
+                    <li class="round-button">1</li>
+                    <li class="round-button">2</li>
+                    <li class="round-button">3</li>
                 </ul>
                 <button onclick="slideToRight()"><img src="img/play1.png" alt=""></button>
             </div>
@@ -143,8 +143,8 @@
                     <br>4년 연속 소비자 만족도 1위를 하였습니다.
                 </p>
             </div>
-            <div class="black"></div>
         </div>
+        <div class="black"></div>
     </div>
     <section class="category">
         <div class="category-text">
@@ -888,108 +888,108 @@
         }
 
 
-        // let index=1;    // 현재 보여주고있는 슬라이드의 인덱스
-        // let moveCheck=true;     //움직임이 완료 되었는가?
-        // const sliderBox = document.querySelector('.slider-box');    //슬라이드를 감싸는 영역
-        // const slideContents = document.querySelectorAll('.slide')   //슬라이드 컨텐츠 전체를 선택
-        // const sliderLength = slideContents.length;                  //슬라이드 컨텐츠의 갯수
+        let index=1;    // 현재 보여주고있는 슬라이드의 인덱스
+        let moveCheck=true;     //움직임이 완료 되었는가?
+        const sliderBox = document.querySelector('.slider-box');    //슬라이드를 감싸는 영역
+        const slideContents = document.querySelectorAll('.slide')   //슬라이드 컨텐츠 전체를 선택
+        const sliderLength = slideContents.length;                  //슬라이드 컨텐츠의 갯수
 
-        // //노드 복사해주기
-        // let copyFirst = sliderBox.firstElementChild.cloneNode(true);
-        // let copylast = sliderBox.lastElementChild.cloneNode(true);
+        //노드 복사해주기
+        let copyFirst = sliderBox.firstElementChild.cloneNode(true);
+        let copylast = sliderBox.lastElementChild.cloneNode(true);
 
-        // //복사한 노드 추가
-        // sliderBox.appendChild(copyFirst);       //자식요소중 마지막으로 추가
-        // sliderBox.insertBefore(copylast, sliderBox.firstElementChild);  //추가하되, 지정한 노드 앞에 추가
+        //복사한 노드 추가
+        sliderBox.appendChild(copyFirst);       //자식요소중 마지막으로 추가
+        sliderBox.insertBefore(copylast, sliderBox.firstElementChild);  //추가하되, 지정한 노드 앞에 추가
 
-        // //노드를 복사해서 앞에 한칸이 더 생겼으니 위의 index를 1로 바꿔, translate를 이용해 한칸 이동시켜줘야한다.
-        // sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
-        // sliderBox.style.width = 300 * (sliderLength+2) + "px";
+        //노드를 복사해서 앞에 한칸이 더 생겼으니 위의 index를 1로 바꿔, translate를 이용해 한칸 이동시켜줘야한다.
+        sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
+        sliderBox.style.width = 300 * (sliderLength+2) + "px";
 
-        // //반복문을 이용해 버튼들에 이벤트 리스너 추가하기
-        // slideRoundButtons = document.querySelectorAll('.round-button');
-        // for ( let i = 0 ; i < slideRoundButtons.length ; i ++ ){
-        //     slideRoundButtons[i].addEventListener('click',buttonClick)
-        // }
+        //반복문을 이용해 버튼들에 이벤트 리스너 추가하기
+        slideRoundButtons = document.querySelectorAll('.round-button');
+        for ( let i = 0 ; i < slideRoundButtons.length ; i ++ ){
+            slideRoundButtons[i].addEventListener('click',buttonClick)
+        }
 
-        // //첫번째 버튼 활성화 시키기
-        // slideRoundButtons[index-1].style.backgroundColor='gray';
+        //첫번째 버튼 활성화 시키기
+        slideRoundButtons[index-1].style.backgroundColor='gray';
 
-        // function buttonClick(){
-        //     if(moveCheck){
-        //         moveCheck=false;
-        //         clearButton();
-        //         this.style.backgroundColor="gray";
-        //         index = this.innerText;
-        //         moveSlide(1000);
-        //         setTimeout(function(){
-        //             moveCheck=true;
-        //         }, 1000);
-        //     }
-        // }
-        // //이전 버튼 누르면 작동
-        // function slideToLeft(){
-        //     if(moveCheck){
-        //         moveCheck=false;
+        function buttonClick(){
+            if(moveCheck){
+                moveCheck=false;
+                clearButton();
+                this.style.backgroundColor="gray";
+                index = this.innerText;
+                moveSlide(1000);
+                setTimeout(function(){
+                    moveCheck=true;
+                }, 1000);
+            }
+        }
+        //이전 버튼 누르면 작동
+        function slideToLeft(){
+            if(moveCheck){
+                moveCheck=false;
                 
-        //         if(index>=0){
-        //             index--;
-        //             moveSlide(1000);
-        //         }
+                if(index>=0){
+                    index--;
+                    moveSlide(1000);
+                }
                 
-        //         clearButton();
-        //         if(index>0)
-        //             slideRoundButtons[index-1].style.backgroundColor='gray';
-        //         else
-        //             slideRoundButtons[slideRoundButtons.length-1].style.backgroundColor='grey'
+                clearButton();
+                if(index>0)
+                    slideRoundButtons[index-1].style.backgroundColor='gray';
+                else
+                    slideRoundButtons[slideRoundButtons.length-1].style.backgroundColor='grey'
 
-        //         setTimeout(function(){
-        //             if(index===0){
-        //                 index=4;
-        //                 moveSlide(0);
-        //             }
-        //             moveCheck=true;
-        //         }, 1000);
-        //     }
-        // }
-        // //다음 버튼 누르면 작동
-        // function slideToRight(){
-        //     if(moveCheck){
-        //         moveCheck=false;
+                setTimeout(function(){
+                    if(index===0){
+                        index=4;
+                        moveSlide(0);
+                    }
+                    moveCheck=true;
+                }, 1000);
+            }
+        }
+        //다음 버튼 누르면 작동
+        function slideToRight(){
+            if(moveCheck){
+                moveCheck=false;
 
-        //         clearButton();
-        //         if(index<slideRoundButtons.length)
-        //             slideRoundButtons[index].style.backgroundColor='gray';
-        //         else
-        //             slideRoundButtons[0].style.backgroundColor='grey'
+                clearButton();
+                if(index<slideRoundButtons.length)
+                    slideRoundButtons[index].style.backgroundColor='gray';
+                else
+                    slideRoundButtons[0].style.backgroundColor='grey'
                 
-        //         if(index<=5){
-        //             index++;
-        //             moveSlide(1000);
-        //         }
-        //         setTimeout(function(){
-        //             if(index===5){
-        //                 index=1;
-        //                 moveSlide(0);
-        //             }
+                if(index<=5){
+                    index++;
+                    moveSlide(1000);
+                }
+                setTimeout(function(){
+                    if(index===5){
+                        index=1;
+                        moveSlide(0);
+                    }
                     
-        //             moveCheck=true;
-        //         }, 1000);
-        //     }
-        // }
-        // //슬라이드 움직이는 함수
-        // function moveSlide(time){
-        //     sliderBox.style.transition = time +'ms';
-        //     sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
-        // }
+                    moveCheck=true;
+                }, 1000);
+            }
+        }
+        //슬라이드 움직이는 함수
+        function moveSlide(time){
+            sliderBox.style.transition = time +'ms';
+            sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
+        }
 
-        // //라디오버튼 지우는 함수
-        // function clearButton(){
-        //     for(let i = 0 ; i < slideRoundButtons.length ; i++){
-        //         slideRoundButtons[i].style.backgroundColor='';
-        //     }
+        //라디오버튼 지우는 함수
+        function clearButton(){
+            for(let i = 0 ; i < slideRoundButtons.length ; i++){
+                slideRoundButtons[i].style.backgroundColor='';
+            }
 
-        // }
+        }
       </script>
 </body>
 </html>
