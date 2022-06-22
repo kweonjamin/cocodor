@@ -19,15 +19,43 @@ header{
     background-color: #222222;
 }
 .main-img{
+    margin: 0 auto;
     width: 300px;
-    margin: 0 auto;
 }
-.main-img{
-    margin: 0 auto;
+.slider{
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+.slider-box{
+    height: 400px;
+}
+.slide{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
 }
 .buttons{
     display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+.buttons>button{
     border: none;
+    background-color: transparent;
+}
+.radio-container{
+    display: flex;
+}
+.round-button{
+    width: 10px;
+    height: 10px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    margin: 0 4px;
+    text-indent: -9999px;
 }
 .main-header{
     display: flex;
@@ -139,17 +167,17 @@ hr{
 .signature-text{
     font-weight: bold;
 }
-.signature-img>a>img{
+.slidecontent1>a>img{
     width: 279px;
     height: 380px;
 }
-.flower-img>a>img{
-    width: 206px;
-    height: 228px;
-}
-.Blackedition-img>a>img{
+.slidecontent2>a>img{
     width: 144px;
     height: 235px;
+}
+.slidecontent3>a>img{
+    width: 206px;
+    height: 228px;
 }
 .cocodor-text{
     margin-top: 40px;
