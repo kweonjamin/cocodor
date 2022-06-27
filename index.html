@@ -894,17 +894,6 @@
         const slideContents = document.querySelectorAll('.slide')   //슬라이드 컨텐츠 전체를 선택
         const sliderLength = slideContents.length;                  //슬라이드 컨텐츠의 갯수
 
-        //노드 복사해주기
-        let copyFirst = sliderBox.firstElementChild.cloneNode(true);
-        let copylast = sliderBox.lastElementChild.cloneNode(true);
-
-        //복사한 노드 추가
-        sliderBox.appendChild(copyFirst);       //자식요소중 마지막으로 추가
-        sliderBox.insertBefore(copylast, sliderBox.firstElementChild);  //추가하되, 지정한 노드 앞에 추가
-
-        //노드를 복사해서 앞에 한칸이 더 생겼으니 위의 index를 1로 바꿔, translate를 이용해 한칸 이동시켜줘야한다.
-        sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
-        sliderBox.style.width = 300 * (sliderLength+2) + "px";
 
         //반복문을 이용해 버튼들에 이벤트 리스너 추가하기
         slideRoundButtons = document.querySelectorAll('.round-button');
