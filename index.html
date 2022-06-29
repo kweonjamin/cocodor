@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
-<!-- 면접때 이런 기능을 썼다 라고 말할줄 알아야함 여지껏 한 자바스크립트
-다시 공부하기 -->
 <body>
     <header>
         <div class="main-header">
@@ -110,34 +108,42 @@
         <div class="main-img">
             <div class="slider">
                 <ul class="slider-box">
-                    <li class="slidecontent3">
+                    <li class="flower-img">
                         <a href="">
-                            <img src="img/[removal 36.png" alt="flower"> 
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020030000452 1.png" alt="flower"> 
                             <h3>Flower</h3>
                         </a>
                     </li>
-                    <li class="slidecontent2">
+                    <li class="signature-img">
                         <a href="">
-                            <img src="img/[removal 35.png" alt="blackedition">
-                            <h3 >Black edition</h3>
-                        </a>
-                    </li>
-                    <li class="slidecontent1">
-                        <a href="">
-                            <img src="img/[removal 37.png" alt="signature">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/Group 141.png" alt="signature">
                             <h3 class="signature-text">Signature</h3>
                         </a>
                     </li>
+                    <li class="Blackedition-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020070000132 1.png" alt="blackedition">
+                            <h3 >Black edition</h3>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <div class="buttons">
-                <button onclick="slideToLeft()"><img src="img/play2.png" alt=""></button>
-                <ul class=radio-container>
-                    <li class="round-button">1</li>
-                    <li class="round-button">2</li>
-                    <li class="round-button">3</li>
-                </ul>
-                <button onclick="slideToRight()"><img src="img/play1.png" alt=""></button>
+                <div class="underline"></div>
+                <p class="best">BEST 디퓨저</p>
+                <div class="buttons">
+                    <button onclick="slideToLeft()"><img src="img/play2.png" alt=""></button>
+                    <ul class=radio-container>
+                        <li class="round-button">1</li>
+                        <li class="round-button">2</li>
+                        <li class="round-button">3</li>
+                    </ul>
+                    <button onclick="slideToRight()"><img src="img/play1.png" alt=""></button>
+                </div>
+                <!-- ul에 오버플로우 위드스랑 하이스를 크게 세개 합친값
+                가운데가 커지니까 200이라고 쳤ㅇ르때 총 컨테이너 400으로
+                예를들어서   li에 100-->
             </div>
             <div class="cocodor-text">
                 <h4>소비자가 뽑은 최고의 디퓨저</h4>
@@ -145,8 +151,8 @@
                     <br>4년 연속 소비자 만족도 1위를 하였습니다.
                 </p>
             </div>
+            <div class="black"></div>
         </div>
-        <div class="black"></div>
     </div>
     <section class="category">
         <div class="category-text">
@@ -194,8 +200,8 @@
                         <button onclick="dp_menu2()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content2">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                블랙에디션은 세련되고 고급진 블랙 패키지로
+                                <br>블랙에디션 디퓨저와 블랙골드 에디션등이 있습니다.
                             </p>
                         </div>
                     </div>
@@ -211,8 +217,8 @@
                         <button onclick="dp_menu3()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content3">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                플라워는 화려한 꽃스틱과 병안에 생화를
+                                <br>그대로 담아낸 화사한 디퓨저 입니다.
                             </p>
                         </div>
                     </div>
@@ -226,8 +232,8 @@
                         <button onclick="dp_menu4()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content4">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                시즌콜라보는 여름계절에 맞는 바다 디퓨저나
+                                <br>다양한 콜라보로 이루어진 디퓨저 입니다.
                             </p>
                         </div>
                     </div>
@@ -243,8 +249,8 @@
                         <button onclick="dp_menu5()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content5">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                캔들워머는 캔들을 녹여 좋은 향과
+                                <br>따뜻한 분위기를 만들어 줍니다.
                             </p>
                         </div>
                     </div>
@@ -258,8 +264,8 @@
                         <button onclick="dp_menu6()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content6">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                DIY는 본인이 원하는 향과
+                                <br>분위기로 디퓨저를 꾸밀 수 있습니다.
                             </p>
                         </div>
                     </div>
@@ -273,8 +279,8 @@
                         <button onclick="dp_menu7()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="drop-content7">
                             <p>
-                                화이트 라벨은 화이트 라벨이 붙어있는 것이
-                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
+                                코코도르 디퓨저를 소중한 분께
+                                <br>선물해보세요.
                             </p>
                         </div>
                     </div>
@@ -307,8 +313,8 @@
                         <button onclick="up_menu1()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content1">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                화이트 라벨은 화이트 라벨이 붙어있는 것이
+                                <br>특징이며, 깔끔한 느낌을 주는 디퓨저 입니다.
                             </p>
                         </div>
                     </div>
@@ -323,8 +329,8 @@
                         <button onclick="up_menu2()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content2">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                블랙에디션은 세련되고 고급진 블랙 패키지로
+                                <br>블랙에디션 디퓨저와 블랙골드 에디션등이 있습니다.
                             </p>
                         </div>
                     </div>
@@ -338,8 +344,8 @@
                         <button onclick="up_menu3()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content3">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                플라워는 화려한 꽃스틱과 병안에 생화를
+                                <br>그대로 담아낸 화사한 디퓨저 입니다.
                             </p>
                         </div>
                     </div>
@@ -355,8 +361,8 @@
                         <button onclick="up_menu4()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content4">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                시즌콜라보는 여름계절에 맞는 바다 디퓨저나
+                                <br>다양한 콜라보로 이루어진 디퓨저 입니다.
                             </p>
                         </div>
                     </div>
@@ -370,8 +376,8 @@
                         <button onclick="up_menu5()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content5">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                캔들워머는 캔들을 녹여 좋은 향과
+                                <br>따뜻한 분위기를 만들어 줍니다.
                             </p>
                         </div>
                     </div>
@@ -387,8 +393,8 @@
                         <button onclick="up_menu6()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content6">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                DIY는 본인이 원하는 향과
+                                <br>분위기로 디퓨저를 꾸밀 수 있습니다.
                             </p>
                         </div>
                     </div>
@@ -402,8 +408,8 @@
                         <button onclick="up_menu7()" class="button"><img src="img/bi_arrow-down-circle.png" alt=""></button>
                         <div style="display: none;" id="up-content7">
                             <p>
-                                시그니처란 코코도르만의 특정 향기와,
-                                <br>코코도르하면 생각나는 디퓨저를 말한다.
+                                코코도르 디퓨저를 소중한 분께
+                                <br>선물해보세요.
                             </p>
                         </div>
                     </div>
@@ -888,99 +894,7 @@
  
             }
         }
-
-
-        let index=1;    // 현재 보여주고있는 슬라이드의 인덱스
-        let moveCheck=true;     //움직임이 완료 되었는가?
-        const sliderBox = document.querySelector('.slider-box');    //슬라이드를 감싸는 영역
-        const slideContents = document.querySelectorAll('.slide')   //슬라이드 컨텐츠 전체를 선택
-        const sliderLength = slideContents.length;                  //슬라이드 컨텐츠의 갯수
-
-
-        //반복문을 이용해 버튼들에 이벤트 리스너 추가하기
-        slideRoundButtons = document.querySelectorAll('.round-button');
-        for ( let i = 0 ; i < slideRoundButtons.length ; i ++ ){
-            slideRoundButtons[i].addEventListener('click',buttonClick)
-        }
-
-        //첫번째 버튼 활성화 시키기
-        slideRoundButtons[index-1].style.backgroundColor='gray';
-
-        function buttonClick(){
-            if(moveCheck){
-                moveCheck=false;
-                clearButton();
-                this.style.backgroundColor="gray";
-                index = this.innerText;
-                moveSlide(1000);
-                setTimeout(function(){
-                    moveCheck=true;
-                }, 1000);
-            }
-        }
-        //이전 버튼 누르면 작동
-        function slideToLeft(){
-            if(moveCheck){
-                moveCheck=false;
-                
-                if(index>=0){
-                    index--;
-                    moveSlide(1000);
-                }
-                
-                clearButton();
-                if(index>0)
-                    slideRoundButtons[index-1].style.backgroundColor='gray';
-                else
-                    slideRoundButtons[slideRoundButtons.length-1].style.backgroundColor='grey'
-
-                setTimeout(function(){
-                    if(index===0){
-                        index=4;
-                        moveSlide(0);
-                    }
-                    moveCheck=true;
-                }, 1000);
-            }
-        }
-        //다음 버튼 누르면 작동
-        function slideToRight(){
-            if(moveCheck){
-                moveCheck=false;
-
-                clearButton();
-                if(index<slideRoundButtons.length)
-                    slideRoundButtons[index].style.backgroundColor='gray';
-                else
-                    slideRoundButtons[0].style.backgroundColor='grey'
-                
-                if(index<=5){
-                    index++;
-                    moveSlide(1000);
-                }
-                setTimeout(function(){
-                    if(index===5){
-                        index=1;
-                        moveSlide(0);
-                    }
-                    
-                    moveCheck=true;
-                }, 1000);
-            }
-        }
-        //슬라이드 움직이는 함수
-        function moveSlide(time){
-            sliderBox.style.transition = time +'ms';
-            sliderBox.style.transform = "translateX(-" + 200*(index) +"px)";
-        }
-
-        //라디오버튼 지우는 함수
-        function clearButton(){
-            for(let i = 0 ; i < slideRoundButtons.length ; i++){
-                slideRoundButtons[i].style.backgroundColor='';
-            }
-
-        }
+        
       </script>
 </body>
 </html>
