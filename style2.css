@@ -114,6 +114,12 @@ hr{
     align-items: center;
     margin-top: 60px;
 }
+.slider-box>li{
+    width: 458px;
+    height: 306px;
+    background-color: #FBFBFB;
+    border: 2px black;
+}
 .slider>ul>li>a>h3{
     text-align: center;
     color: #413F3F;
@@ -149,18 +155,6 @@ hr{
 }
 .signature-text{
     font-weight: bold;
-}
-.signature-img>a>img{
-    width: 279px;
-    height: 380px;
-}
-.flower-img>a>img{
-    width: 206px;
-    height: 228px;
-}
-.Blackedition-img>a>img{
-    width: 144px;
-    height: 235px;
 }
 .cocodor-text{
     margin-top: 40px;
