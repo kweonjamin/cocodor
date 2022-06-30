@@ -18,9 +18,9 @@ h4{
     width: 550px;
 }
 .slider{
-    width: 550px;
+    width: 600px;
     height: 500px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .slider-box{
     height: 400px;
@@ -145,8 +145,8 @@ hr{
 .buttons{
     display: flex;
     align-items: center;
-    margin-top: 30px;
     justify-content: center;
+    margin-top: 20px;
 }
 .buttons>button{
     border: none;
@@ -187,6 +187,7 @@ hr{
 }
 .cocodor-text{
     text-align: center;
+    margin-top: 30px;
 }
 .cocodor-text>h4{
     margin-bottom: 15px;
