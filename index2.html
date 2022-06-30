@@ -110,35 +110,75 @@
                 <ul class="slider-box">
                     <li class="flower-img">
                         <a href="">
-<<<<<<< HEAD
-=======
                             <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
->>>>>>> b1a49c960dcbf43350848f545a73585089199acd
                             <img src="img/0020030000452 1.png" alt="flower"> 
                             <h3>Flower</h3>
                         </a>
                     </li>
                     <li class="signature-img">
                         <a href="">
-<<<<<<< HEAD
-=======
                             <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
->>>>>>> b1a49c960dcbf43350848f545a73585089199acd
                             <img src="img/Group 141.png" alt="signature">
                             <h3 class="signature-text">Signature</h3>
                         </a>
                     </li>
                     <li class="Blackedition-img">
                         <a href="">
-<<<<<<< HEAD
-=======
                             <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
->>>>>>> b1a49c960dcbf43350848f545a73585089199acd
                             <img src="img/0020070000132 1.png" alt="blackedition">
                             <h3 >Black edition</h3>
                         </a>
                     </li>
                 </ul>
+                <ul class="slider-box">
+                    <li class="flower-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020030000452 1.png" alt="flower"> 
+                            <h3>Flower</h3>
+                        </a>
+                    </li>
+                    <li class="signature-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/Group 141.png" alt="signature">
+                            <h3 class="signature-text">Signature</h3>
+                        </a>
+                    </li>
+                    <li class="Blackedition-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020070000132 1.png" alt="blackedition">
+                            <h3 >Black edition</h3>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="slider-box">
+                    <li class="flower-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020030000452 1.png" alt="flower"> 
+                            <h3>Flower</h3>
+                        </a>
+                    </li>
+                    <li class="signature-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/Group 141.png" alt="signature">
+                            <h3 class="signature-text">Signature</h3>
+                        </a>
+                    </li>
+                    <li class="Blackedition-img">
+                        <a href="">
+                            <img src="img/rb1j0o_4i3x-tor3ve_logo 2.png" alt="">
+                            <img src="img/0020070000132 1.png" alt="blackedition">
+                            <h3 >Black edition</h3>
+                        </a>
+                    </li>
+                </ul>
+                <!-- ul에 오버플로우 위드스랑 하이스를 크게 세개 합친값
+                가운데가 커지니까 200이라고 쳤ㅇ르때 총 컨테이너 400으로
+                예를들어서   li에 100-->
             </div>
             <div class="underline"></div>
             <p class="best">BEST 디퓨저</p>
@@ -151,9 +191,6 @@
                 </ul>
                 <button onclick="slideToRight()"><img src="img/play1.png" alt=""></button>
             </div>
-            <!-- ul에 오버플로우 위드스랑 하이스를 크게 세개 합친값
-            가운데가 커지니까 200이라고 쳤ㅇ르때 총 컨테이너 400으로
-            예를들어서   li에 100-->
             <div class="cocodor-text">
                 <h4>소비자가 뽑은 최고의 디퓨저</h4>
                 <p>코코도르는 디퓨저 평판 1위는 물론
@@ -903,32 +940,27 @@
  
             }
         }
-        let index=1;    // 현재 보여주고있는 슬라이드의 인덱스
-        let moveCheck=true;     //움직임이 완료 되었는가?
-        const sliderBox = document.querySelector('.slider-box');    //슬라이드를 감싸는 영역
-        const slideContents = document.querySelectorAll('.slide')   //슬라이드 컨텐츠 전체를 선택
-        const sliderLength = slideContents.length;                  //슬라이드 컨텐츠의 갯수
+        let index=1;    
+        let moveCheck=true;    
+        const sliderBox = document.querySelector('.slider-box');   
+        const slideContents = document.querySelectorAll('.slide')   
+        const sliderLength = slideContents.length;                  
 
         
-        // //노드 복사해주기
-        // let copyFirst = sliderBox.firstElementChild.cloneNode(true);
-        // let copylast = sliderBox.lastElementChild.cloneNode(true);
+        let copyFirst = sliderBox.firstElementChild.cloneNode(true);
+        let copylast = sliderBox.lastElementChild.cloneNode(true);
 
-        // //복사한 노드 추가
-        // sliderBox.appendChild(copyFirst);       //자식요소중 마지막으로 추가
-        // sliderBox.insertBefore(copylast, sliderBox.firstElementChild);  //추가하되, 지정한 노드 앞에 추가
 
-        // //노드를 복사해서 앞에 한칸이 더 생겼으니 위의 index를 1로 바꿔, translate를 이용해 한칸 이동시켜줘야한다.
-        // sliderBox.style.transform = "translateX(-" + 300*(index) +"px)";
-        // sliderBox.style.width = 300 * (sliderLength+2) + "px";
+        sliderBox.appendChild(copyFirst);      
+        sliderBox.insertBefore(copylast, sliderBox.firstElementChild); 
 
-        //반복문을 이용해 버튼들에 이벤트 리스너 추가하기
+
         slideRoundButtons = document.querySelectorAll('.round-button');
         for ( let i = 0 ; i < slideRoundButtons.length ; i ++ ){
             slideRoundButtons[i].addEventListener('click',buttonClick)
         }
 
-        //첫번째 버튼 활성화 시키기
+
         slideRoundButtons[index-1].style.backgroundColor='gray';
 
         function buttonClick(){
@@ -943,7 +975,7 @@
                 }, 1000);
             }
         }
-        //이전 버튼 누르면 작동
+
         function slideToLeft(){
             if(moveCheck){
                 moveCheck=false;
@@ -961,14 +993,14 @@
 
                 setTimeout(function(){
                     if(index===0){
-                        index=3;
+                        index=4;
                         moveSlide(0);
                     }
                     moveCheck=true;
                 }, 1000);
             }
         }
-        //다음 버튼 누르면 작동
+
         function slideToRight(){
             if(moveCheck){
                 moveCheck=false;
@@ -993,13 +1025,11 @@
                 }, 1000);
             }
         }
-        //슬라이드 움직이는 함수
         function moveSlide(time){
             sliderBox.style.transition = time +'ms';
-            sliderBox.style.transform = "translateX(-" +200*(index) +"px)";
+            sliderBox.style.transform = "translateX(-" +258*(index) +"px)";
         }
 
-        //라디오버튼 지우는 함수
         function clearButton(){
             for(let i = 0 ; i < slideRoundButtons.length ; i++){
                 slideRoundButtons[i].style.backgroundColor='';
@@ -1007,5 +1037,7 @@
 
         }
       </script>
+      <!-- 디브안에 유엘을 앞뒤로 총3개 복사해서
+    디브에 트렌스레이트X로 슬라이드 주기 -->
 </body>
 </html>
