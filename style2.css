@@ -14,18 +14,14 @@ h4{
     font-family: 'Nanum Gothic', sans-serif;
 }
 .wrapper{
-    width: 1280px;
+    width: 1428px;
     margin: 0 auto;
 }
 .slider{
-    width: 1280px;
+    width: 1428px;
     height: 450px;
     overflow: hidden;
     margin: 0 auto;
-}
-.slider-box{
-    /* width: 1200px; */
-    height: 450px;
 }
 .slider-box{
     display: flex;
@@ -39,6 +35,7 @@ h4{
     border: 2px black solid;
     border-radius: 16px;
     margin-left: 18px;
+    flex-shrink: 0;
 }
 .slider-box>li>a>img{
     margin: 0 auto;
@@ -158,28 +155,7 @@ hr{
     margin-right: 32px;
     font-size: 14px;
 }
-<<<<<<< HEAD
-.slider>ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-.slider-box>li{
-    width: 458px;
-    height: 306px;
-    background-color: #FBFBFB;
-    border: 2px black;
-}
-.slider>ul>li>a>h3{
-    text-align: center;
-    color: #413F3F;
-    font-size: 18px;
-    margin-top: 10px;
-}
-=======
 
->>>>>>> b1a49c960dcbf43350848f545a73585089199acd
 .buttons{
     display: flex;
     align-items: center;
@@ -202,17 +178,6 @@ hr{
     margin: 0 4px;
     text-indent: -9999px;
 }
-<<<<<<< HEAD
-.main-img>ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.signature-text{
-    font-weight: bold;
-}
-=======
->>>>>>> b1a49c960dcbf43350848f545a73585089199acd
 .cocodor-text{
     margin-top: 40px;
     text-align: center;
@@ -1174,4 +1139,8 @@ footer{
         top: 150px;
         right: 50px;
     }
+}
+@media screen and (max-width:640px) {
+
+    
 }
