@@ -47,26 +47,26 @@
                     </a>
                 </li>
                 <div class="navBox">
-                    <img class="iconBtn" id="menuBtn" src="img/bx_menu.png" />
+                    <img class="iconBtn" id="menuBtn" src="img/bx_menu.png" alt="menu">
                 </div>
                 <div class="menuWrap">
                     <nav id="menu">
-                      <ul class="menuList">
-                        <li class="listStyle">
-                            <a href="#">기획전</a>
-                        </li>
-                        <li class="listStyle">
-                          <a href="#">디퓨저</a>
-                        </li>
-                        <li class="listStyle">
-                          <a href="#">캔들</a>
-                        </li>
-                        <li class="listStyle"><a href="">DIY</a></li>
-                        <li class="listStyle"><a href="">플라워</a></li>
-                        <li class="listStyle"><a href="">향기</a></li>
-                        <li class="listStyle"><a href="">대량&답레품</a></li>
-                        <li class="listStyle"><a href="">B2B</a></li>
-                      </ul>
+                        <ul class="menuList">
+                            <li class="listStyle">
+                                <a href="#">기획전</a>
+                            </li>
+                            <li class="listStyle">
+                              <a href="#">디퓨저</a>
+                            </li>
+                            <li class="listStyle">
+                              <a href="#">캔들</a>
+                            </li>
+                            <li class="listStyle"><a href="">DIY</a></li>
+                            <li class="listStyle"><a href="">플라워</a></li>
+                            <li class="listStyle"><a href="">향기</a></li>
+                            <li class="listStyle"><a href="">대량&답레품</a></li>
+                            <li class="listStyle"><a href="">B2B</a></li>
+                        </ul>
                     </nav>
                     <hr>
                     <nav id="menu">
@@ -88,7 +88,9 @@
     <div class="main">
         <div class="main-logo">
             <h1>
-                <img src="img/q29wan_t2ka-tor3ve_logo 1.png" alt="cocodor-logo">
+                <a href="">
+                    <img src="img/q29wan_t2ka-tor3ve_logo 1.png" alt="cocodor-logo">
+                </a>
             </h1>
         </div>
         <div class="list">
@@ -521,7 +523,7 @@
             </div>
             <div class="interior-inner-text">
                 <h3>캔들워머</h3>
-                <p>캔들워멀로 은은한 향기와
+                <p>캔들워머로 은은한 향기와
                     <br>은은한 분위기로 방을
                     <br>아늑하게 꾸며 보새요.
                 </p>
@@ -948,6 +950,13 @@
 
         slideRoundButtons[index-1].style.backgroundColor='gray';
 
+        sliderBox.style.transform = "translateX(-" +476*(index) +"px)";
+
+        setInterval(() => {
+            slideToRight();
+        }, 3000);
+
+
         function buttonClick(){
             if(moveCheck){
                 moveCheck=false;
@@ -1012,7 +1021,7 @@
         }
         function moveSlide(time){
             sliderBox.style.transition = time +'ms';
-            sliderBox.style.transform = "translateX(-" +480*(index) +"px)";
+            sliderBox.style.transform = "translateX(-" +476*(index) +"px)";
         }
 
         function clearButton(){
