@@ -1133,3 +1133,11 @@ footer{
         right: 50px;
     }
 }
+@media screen and (max-width:600px){
+    .wrapper{
+        width: 475px;
+    }
+    .slider{
+        width: 475px;
+    }
+}
