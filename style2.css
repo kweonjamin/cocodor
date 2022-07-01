@@ -13,54 +13,6 @@ h3{
 h4{
     font-family: 'Nanum Gothic', sans-serif;
 }
-.wrapper{
-    width: 1428px;
-    margin: 0 auto;
-}
-.slider{
-    width: 1428px;
-    height: 450px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-.slider-box{
-    justify-content: center;
-    margin-top: 93px;
-    width: 100%;
-    display: flex;
-}
-.slider-box>li{
-    width: 458px;
-    height: 320px;
-    background-color: #ffffff;
-    border: 2px black solid;
-    border-radius: 16px;
-    margin-left: 18px;
-    flex-shrink: 0;
-}
-.slider-box>li>a>img{
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.slider-box>li>a>h3{
-    text-align: center;
-    font-weight: 600;
-    font-size: 16px;
-}
-.underline{
-    width: 350px;
-    height: 2px;
-    background-color: #000000;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.best{
-    text-align: center;
-    margin-top: 16px;
-    font-weight: 600;
-    font-size: 20px;
-}
 header{
     width: 100%;
     height: 60px;
@@ -152,7 +104,54 @@ hr{
     margin-right: 32px;
     font-size: 14px;
 }
-
+.wrapper{
+    width: 1428px;
+    margin: 0 auto;
+}
+.slider{
+    width: 1428px;
+    height: 450px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-box{
+    justify-content: center;
+    margin-top: 93px;
+    width: 100%;
+    display: flex;
+}
+.slider-box>li{
+    width: 458px;
+    height: 320px;
+    background-color: #ffffff;
+    border: 2px black solid;
+    border-radius: 16px;
+    margin-left: 18px;
+    flex-shrink: 0;
+}
+.slider-box>li>a>img{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slider-box>li>a>h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.underline{
+    width: 350px;
+    height: 2px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.best{
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+}
 .buttons{
     display: flex;
     align-items: center;
@@ -606,9 +605,6 @@ hr{
 }
 .smell-img>ul>li>a>p{
     text-align: center;
-}
-.Woody-img{
-    
 }
 .Fresh-img{
     margin-top: 20px;
@@ -1136,8 +1132,4 @@ footer{
         top: 150px;
         right: 50px;
     }
-}
-@media screen and (max-width:640px) {
-
-    
 }
