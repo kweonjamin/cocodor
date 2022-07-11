@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            padding: 30px;
+            text-align: center;
+        }
+        #bigImages{
+            margin-bottom: 10px;
+        }
+        #big{
+            width: 310px;
+            height: 310px;
+        }
+        .small{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h2>이미지바꾸기</h2>
+        <div id="bigImages">
+            <img id="big" src="img/img\ \(1\)\ 1.png" alt="">
+        </div>
+        <div id="smallImages">
+            <img class="small" src="img/161715000602789016\ 1.png" alt="">
+            <img class="small" src="img/0020070000062.png" alt="">
+            <img class="small" src="img/0020110000062.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var bigPic = document.querySelector("#big");
+        var smallPic = document.querySelectorAll(".small");
+
+        for(var i = 0; i<smallPics.length; i++){
+            smallPics[i].addEventListener("click",changepic);
+        }
+
+        function changepic(){
+            var smallPicAttribute = this.getAttribute("src");
+            bigPic.setAttribute("src",smallPicAttribute);
+        }
+    </script>
+</body>
+</html>
