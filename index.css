@@ -790,9 +790,11 @@ hr{
     margin-right: 33px;
     border-radius: 16px 16px 16px 0px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-.try-inner-img{
     padding: 20px;
+}
+.try-inner-img>img{
+    margin: 0 auto;
+    width: 175px;
 }
 .try-inner-text>h3{
     font-size: 16px;
