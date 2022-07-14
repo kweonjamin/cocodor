@@ -1290,4 +1290,7 @@ footer{
     .category-main2{
         margin-bottom: 50px;
     }
+    .smell-img>ul>li>a>p{
+        font-size: 12px;
+    }
 }
