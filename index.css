@@ -1263,4 +1263,12 @@ footer{
         height: 85px;
         font-size: 10px;
     }
+    .slider-box>li{
+        width: 375px;
+        height: 262px;
+    }
+    .flower-img{
+        width: 170px;
+        height: 158px;
+    }
 }
