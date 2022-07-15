@@ -819,9 +819,6 @@ hr{
     left: 140px;
     bottom: 40px;
 }
-.buttons2{
-    display: none;
-}
 footer{
     background-color: #F0F0F0;
     overflow: hidden;
@@ -1389,21 +1386,5 @@ footer{
         text-align: center;
         font-weight: 600;
         font-size: 16px;
-    }
-    .buttons2{
-        display: block;
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .buttons2>button{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .round-button{
-        width: 8px;
-        height: 8px;
     }
 }
