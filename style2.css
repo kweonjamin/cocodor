@@ -1226,8 +1226,8 @@ footer{
 }
 @media screen and (max-width:480px){
     .category-main2>ul>li{
-        width: 210px;
-        height: 175px;
+        width: 175px;
+        height: 165px;
     }
     #up-content p{
         width: 210px;
