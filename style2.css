@@ -672,7 +672,7 @@ hr{
 .interior-main-text2{
     color: #000000;
     transform: translate(-50%,-50%);
-    top: 70%;
+    top: 65%;
     left: 50%;
     position: absolute;
     text-align: right;
@@ -818,9 +818,6 @@ hr{
     position: absolute;
     left: 140px;
     bottom: 40px;
-}
-.buttons2{
-    display: none;
 }
 footer{
     background-color: #F0F0F0;
@@ -1327,7 +1324,6 @@ footer{
     .try-img2{
         display: flex;
         margin-top: 20px;
-        margin-left: 30px;
         margin-bottom: 10px;
     }
     .try-inner-img{
@@ -1348,6 +1344,25 @@ footer{
     .try-inner-img{
         margin-right:15px;
     }
+    .try-img2{
+        overflow: hidden;
+    }
+    .try-main-img2{
+        background-image: url('img/Group\ 126.png');
+        width: 375px;
+        height: 283px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .try-main-text>p{
+        font-size: 10px;
+    }
+    .try-main-text>h3{
+        font-size: 20px;
+    }
+    .try-main-text>p{
+        font-size: 12px;
+    }
     .safe-img>img{
         width: 31px;
         height: 31px;
@@ -1355,8 +1370,11 @@ footer{
         bottom: 38px;
     }
     .smell-inner>a>img{
-        width: 380px;
-        height: 413px;
+        width: 340px;
+        height: 373px;
+    }
+    .smell-inner-text{
+        display: none;
     }
     .smell-inner-text>h3{
         font-size: 26px;
@@ -1390,20 +1408,43 @@ footer{
         font-weight: 600;
         font-size: 16px;
     }
-    .buttons2{
-        display: block;
+    .main-interior {
+        height: 622px;
+    }
+    .main-interior2 {
+        height: 622px;
+    }
+    .main-interior3 {
+        height: 622px;
+    }
+    .circle-style>ul>li{
+        margin-top: 565px;
+    }
+    .circle-style2>ul>li{
+        margin-top: 565px;
+    }
+    .Herbal-img>a>img {
+        width: 34px;
+        height: 61px;
+    }
+    .Woody-img>a>img {
+        width: 70px;
+        height: 72px;
+    }
+    .Fresh-img>a>img {
+        width: 53px;
+        height: 48px;
+    }
+    .CottonMusk-img>a>img {
+        width: 55px;
+        height: 58px;
+    }
+    .fruity-img>a>img {
+        width: 56px;
+        height: 51px;
+    }
+    .smell-img>ul {
+        margin: 0 auto;
         margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .buttons2>button{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .round-button{
-        width: 8px;
-        height: 8px;
     }
 }
