@@ -171,10 +171,10 @@
                         </a>
                     </li>
                 </ul>
+            </div>
                 <!-- ul에 오버플로우 위드스랑 하이스를 크게 세개 합친값
                 가운데가 커지니까 200이라고 쳤ㅇ르때 총 컨테이너 400으로
                 예를들어서   li에 100-->
-            </div>
             <div class="underline"></div>
             <p class="best">BEST 디퓨저</p>
             <div class="buttons">
@@ -692,6 +692,71 @@
                 </div>
             </div>
         </div>
+        <div class="try-main2">
+            <div class="try-main-img">
+                <!-- 백그라운드 이미지 -->
+                <div class="try-main-text">
+                    <h3>안개꽃 농장</h3>
+                    <p>좋은 서비스를 위한 노력.</p>
+                    <p class="try-main-text">좀 더 좋은 품질과
+                        <br>저렴한 가격으로 다가가기 위해
+                        <br>안개꽃 농장을 직접 운영합니다.
+                    </p>
+                </div>
+            </div>
+            <div class="try-4img2">
+                <div class="try-img2">
+                    <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Group 105.png" alt="Farm">
+                            <div class="try-inner-text">
+                                <h3>안개꽃 농장</h3>
+                                <p>좀더 좋은품질과 저렴한가격으로
+                                    <br>다가가기 위해 안개꽃 농장을
+                                    <br>직접 운영합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Group 100.png" alt="Export">
+                            <div class="try-inner-text">
+                                <h3>전세계로 수출</h3>
+                                <p>코코도르는 세계로 뻗어나가
+                                    <br>20개국 나라에 수출을 하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Rectangle 489.png" alt="donation">
+                            <div class="try-inner-text">
+                                <h3>기부</h3>
+                                <p>코코도르는 받은 사랑을 기부를
+                                    <br>통해 다시 나누고자 노력합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/158915935475174546 1.png" alt="safe diffuser">
+                            <div class="try-inner-text">
+                                <h3>안전한 디퓨저</h3>
+                                <p>코코도르는 걱정성분 무첨가
+                                    <br>테스트로 안정성 검사를 통과하였습니다.
+                                </p>
+                            </div>
+                            <div class="safe-img">
+                                <img src="img/Group 103.png" alt="safe">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="black"></div>
     </section>
     <footer>
@@ -1009,6 +1074,8 @@ document.addEventListener("DOMContentLoaded", function () {
  
             }
         }
+
+
         let index=1;    
         let moveCheck=true;    
         const sliderBox = document.querySelector('.slider-box');   
@@ -1094,7 +1161,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         function moveSlide(time){
             sliderBox.style.transition = time +'ms';
-            sliderBox.style.transform = "translateX(-" +393*(index) +"px)";
+            sliderBox.style.transform = "translateX(-" +476*(index) +"px)";
         }
 
         function clearButton(){
@@ -1130,6 +1197,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 $(".main-interior3").show();
             });
         });
+
+
+        
 </script>
  
 </html>
