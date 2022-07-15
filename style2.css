@@ -819,6 +819,9 @@ hr{
     left: 140px;
     bottom: 40px;
 }
+.buttons2{
+    display: none;
+}
 footer{
     background-color: #F0F0F0;
     overflow: hidden;
@@ -1325,7 +1328,7 @@ footer{
         display: flex;
         margin-top: 20px;
         margin-left: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     .try-inner-img{
         width: 168px;
@@ -1362,19 +1365,19 @@ footer{
         font-size: 12px;
     }
     .wrapper{
-        width: 458px;
+        width: 375px;
     }
     .slider{
-        width: 458px;
+        width: 375px;
         height: 450px;
     }
     .slider-box>li{
-        width: 375px;
+        width: 458px;
         height: 300px;
         background-color: #ffffff;
         border: 2px black solid;
         border-radius: 16px;
-        margin-left: 83px;
+        margin-left: 18px;
         flex-shrink: 0;
     }
     .slider-box>li>a>img{
@@ -1386,5 +1389,21 @@ footer{
         text-align: center;
         font-weight: 600;
         font-size: 16px;
+    }
+    .buttons2{
+        display: block;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttons2>button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .round-button{
+        width: 8px;
+        height: 8px;
     }
 }
