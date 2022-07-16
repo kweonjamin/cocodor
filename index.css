@@ -1358,7 +1358,7 @@ footer{
     }
     .try-main-img2{
         background-image: url('img/Group\ 126.png');
-        width: 375px;
+        width: 100%;
         height: 283px;
         background-position: center;
         background-repeat: no-repeat;
