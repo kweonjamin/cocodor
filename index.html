@@ -1088,7 +1088,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let moveCheck=true;    
         const sliderBox = document.querySelector('.slider-box');   
         const slideContents = document.querySelectorAll('.slide')   
-        const sliderLength = slideContents.length;                  
+        const sliderLength = slideContents.length;   
+        
+        let copyFirst = sliderBox.firstElementChild.cloneNode(true);
+        let copylast = sliderBox.lastElementChild.cloneNode(true);
+
+        
+        sliderBox.appendChild(copyFirst);       
+        sliderBox.insertBefore(copylast, sliderBox.firstElementChild);
 
         slideRoundButtons = document.querySelectorAll('.round-button');
         for ( let i = 0 ; i < slideRoundButtons.length ; i ++ ){
@@ -1111,7 +1118,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        sliderBox.style.transform = "translateX(-" +375*(index) +"px)";
+        sliderBox.style.transform = "translateX(-" +346*(index) +"px)";
 
             setInterval(() => {
                 slideToRight();
@@ -1169,7 +1176,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         function moveSlide(time){
             sliderBox.style.transition = time +'ms';
-            sliderBox.style.transform = "translateX(-" +476*(index) +"px)";
+            sliderBox.style.transform = "translateX(-" +346*(index) +"px)";
         }
 
         function clearButton(){
@@ -1207,25 +1214,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         var mainSlider = $('.try-4img2');
-    var innerText = $('.try-inner-img');
+        var innerText = $('.try-inner-img');
 
-    mainSlider.slick({
-        slidesToShow: 2,
-    });
+        mainSlider.slick({
+            slidesToShow: 2,
+        });
 
-    mainSlider.on('wheel', function(e) {
-      e.preventDefault();
+        mainSlider.on('wheel', function(e) {
+          e.preventDefault();
 
-      if (e.originalEvent.deltaY < 0) {
-        $(this).slick('slickPrev');
-      } else {
-        $(this).slick('slickNext');
-      }
-    });
+          if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+          } else {
+            $(this).slick('slickNext');
+          }
+        });
 
-    innerText.on('wheel', function(e) {
-        e.stopPropagation();
-    })
+        innerText.on('wheel', function(e) {
+            e.stopPropagation();
+        })
 </script>
  
 </html>
