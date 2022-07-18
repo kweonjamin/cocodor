@@ -665,7 +665,7 @@ hr{
     color: #FBFBFB;
     transform: translate(-50%,-50%);
     top: 50%;
-    left: 35%;
+    left: 30%;
     position: absolute;
     text-align: right;
 }
@@ -681,7 +681,7 @@ hr{
     color: #000000;
     transform: translate(-50%,-50%);
     top: 65%;
-    left: 38%;
+    left: 25%;
     position: absolute;
     text-align: right;
 }
