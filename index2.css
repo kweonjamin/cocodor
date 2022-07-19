@@ -685,7 +685,7 @@ hr{
     color: #000000;
     transform: translate(-50%,-50%);
     top: 65%;
-    left: 25%;
+    left: 30%;
     position: absolute;
     text-align: right;
 }
@@ -1420,5 +1420,9 @@ footer{
     }
     .interior-inner-text>p{
         font-size: 10px;
+    }
+    .interior-main-text3 {
+        left: 35%;
+        margin-right: 60px;
     }
 }
