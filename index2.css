@@ -104,9 +104,9 @@ hr{
     margin-right: 32px;
     font-size: 14px;
 }
-.navBox{
+/* .navBox{
     display: none;
-}
+} */
 .wrapper{
     width: 1038px;
     margin: 0 auto;
@@ -685,7 +685,7 @@ hr{
     color: #000000;
     transform: translate(-50%,-50%);
     top: 65%;
-    left: 25%;
+    left: 30%;
     position: absolute;
     text-align: right;
 }
@@ -901,12 +901,14 @@ footer{
         width: 100%;
     }
 }
+@media screen and (min-width:960px) {
+    .navBox{
+        display: none;
+    }
+}
 @media screen and (max-width:960px) {
     .list{
         display: none;
-    }
-    .navBox{
-        display: block;
     }
     .login-img{
         display: none;
@@ -1418,5 +1420,9 @@ footer{
     }
     .interior-inner-text>p{
         font-size: 10px;
+    }
+    .interior-main-text3 {
+        left: 35%;
+        margin-right: 60px;
     }
 }
