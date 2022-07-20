@@ -1297,6 +1297,10 @@ footer{
         width: 36px;
         height: 36px;
     } 
+    .interior-text>h2{
+        font-size: 36px;
+        margin-left: -15px;
+    }
 }
 
 @media screen and (max-width:420px){
@@ -1472,10 +1476,6 @@ footer{
     .main-logo>h1>a>img{
         width: 304px;
         height: 50px;
-    }
-    .interior-text>h2{
-        font-size: 36px;
-        margin-left: -15px;
     }
     .interior-text>p{
         font-size: 12px;
