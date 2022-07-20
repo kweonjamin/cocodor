@@ -587,7 +587,7 @@
         <div class="main-interior3">
             <div class="interior-main-text3">
                 <div class="interior-text">
-                    <h2>인테리어 스타일링</h2>
+                    <h2>인테리어스타일링</h2>
                     <p>다양한 디퓨저로 인테리어를 스타일링 해보세요.</p>
                 </div>
                 <div class="interior-inner-text">
@@ -631,9 +631,16 @@
                 <div class="try-main-text">
                     <h3>안개꽃 농장</h3>
                     <p>좋은 서비스를 위한 노력.</p>
+<<<<<<< HEAD
                     <p class="try-main-text1">좀 더 좋은 품질과
                         <br>저렴한 가격으로 다가가기 위해
                         <br>안개꽃 농장을 직접 운영합니다.
+=======
+                    <p class="try-main-text1">좀 더 좋은 품질을
+                        <br>위해 안개꽃 농장을
+                        <br>직접 운영합니다.
+                    </p>
+>>>>>>> 2c7ce229cae3387905b36a099d43ee663453c6b2
                     </p>
                 </div>
             </div>
@@ -698,9 +705,9 @@
                 <div class="try-main-text">
                     <h3>안개꽃 농장</h3>
                     <p>좋은 서비스를 위한 노력.</p>
-                    <p class="try-main-text">좀 더 좋은 품질과
-                        <br>저렴한 가격으로 다가가기 위해
-                        <br>안개꽃 농장을 직접 운영합니다.
+                    <p class="try-main-text1">좀 더 좋은 품질을
+                        <br>위해 안개꽃 농장을
+                        <br>직접 운영합니다.
                     </p>
                 </div>
             </div>
@@ -760,6 +767,78 @@
                         </div>
                     </div>
                   </a>
+                </div>
+            </div>
+        </div>
+            <div class="try-main3">
+                <div class="try-main-img2">
+                    <!-- 백그라운드 이미지 -->
+                    <div class="try-main-text">
+                        <h3>안개꽃 농장</h3>
+                        <p>좋은 서비스를 위한 노력.</p>
+                        <p class="try-main-text1">좀 더 좋은 품질을
+                            <br>위해 안개꽃 농장을
+                            <br>직접 운영합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="try-4img3">
+                    <div class="try-img3">
+                      <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Group 105.png" alt="Farm">
+                            <div class="try-inner-text">
+                                <h3>안개꽃 농장</h3>
+                                <p>좀더 좋은품질과 저렴한가격으로
+                                    <br>다가가기 위해 안개꽃 농장을
+                                    <br>직접 운영합니다.
+                                </p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="try-img3">
+                      <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Group 100.png" alt="Export">
+                            <div class="try-inner-text">
+                                <h3>전세계로 수출</h3>
+                                <p>코코도르는 세계로 뻗어나가
+                                    <br>20개국 나라에 수출을 하고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="try-img3">
+                      <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/Rectangle 489.png" alt="donation">
+                            <div class="try-inner-text">
+                                <h3>기부</h3>
+                                <p>코코도르는 받은 사랑을 기부를
+                                    <br>통해 다시 나누고자 노력합니다.
+                                </p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="try-img3">
+                      <a href="">
+                        <div class="try-inner-img">
+                            <img src="img/158915935475174546 1.png" alt="safe diffuser">
+                            <div class="try-inner-text">
+                                <h3>안전한 디퓨저</h3>
+                                <p>코코도르는 걱정성분 무첨가
+                                    <br>테스트로 안정성 검사를 통과하였습니다.
+                                </p>
+                            </div>
+                            <div class="safe-img">
+                                <img src="img/Group 103.png" alt="safe">
+                            </div>
+                        </div>
+                      </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -883,7 +962,7 @@
       
 </body>
  
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
@@ -1218,6 +1297,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         mainSlider.slick({
             slidesToShow: 2,
+        });
+
+        mainSlider.on('wheel', function(e) {
+          e.preventDefault();
+
+          if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+          } else {
+            $(this).slick('slickNext');
+          }
+        });
+
+        innerText.on('wheel', function(e) {
+            e.stopPropagation();
+        })
+
+
+        var mainSlider = $('.try-4img3');
+        var innerText = $('.try-inner-img');
+
+        mainSlider.slick({
+            slidesToShow: 3,
         });
 
         mainSlider.on('wheel', function(e) {
