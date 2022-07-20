@@ -675,22 +675,28 @@ hr{
     left: 30%;
     position: absolute;
     text-align: right;
+    padding: 20px;
+    background-color: #23232370;
 }
 .interior-main-text2{
-    color: #000000;
+    color: #ebebeb;
     transform: translate(-50%,-50%);
-    top: 65%;
+    top: 60%;
     left: 50%;
     position: absolute;
     text-align: right;
+    padding: 20px;
+    background-color: #23232370;
 }
 .interior-main-text3{
-    color: #000000;
+    color: #ebebeb;
     transform: translate(-50%,-50%);
-    top: 65%;
+    top: 60%;
     left: 30%;
     position: absolute;
     text-align: right;
+    padding: 20px;
+    background-color: #23232370;
 }
 .interior-text>h2{
     font-size: 56px;
@@ -997,7 +1003,7 @@ footer{
         font-size: 12px;
     }
     .category-text>h2{
-        font-size: 42px;
+        font-size: 40px;
     }
     .category-text>p{
         font-size: 12px;
@@ -1077,12 +1083,20 @@ footer{
         height: 71px;
     }
     .circle-style>ul>li{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         margin-right: 12px;
     }
     .circle-style>ul>li>p{
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .circle-style2>ul>li{
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+    .circle-style2>ul>li>p{
+        font-size: 12px;
     }
     .interior-text>p{
         font-size: 12px;
@@ -1096,14 +1110,6 @@ footer{
     .interior-text>h2{
         font-size: 46px;
     }
-    .circle-style2>ul>li{
-        width: 50px;
-        height: 50px;
-        margin-right: 12px;
-    }
-    .circle-style2>ul>li>p{
-        font-size: 8px;
-    }
     .brand-footer{
         display: flex;
         flex-direction: column;
@@ -1116,22 +1122,22 @@ footer{
 @media screen and (max-width:700px) {
     .try-inner-img{
         width: 185px;
-        height: 252px;
+        height: 262px;
     }
     .try-inner-img>img{
         width: 145px;
         height: 145px;
     }
     .try-inner-text>h3{
-        font-size: 12px;
+        font-size: 14px;
     }
     .try-inner-text>p{
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px;
     }
     .safe-img>img{
         left: 120px;
-        bottom: 40px;
+        bottom: 50px;
         width: 40px;
         height: 40px;
     } 
@@ -1417,10 +1423,10 @@ footer{
         height: 622px;
     }
     .circle-style>ul>li{
-        margin-top: 565px;
+        margin-top: 550px;
     }
     .circle-style2>ul>li{
-        margin-top: 565px;
+        margin-top: 550px;
     }
     .smell-img>ul {
         margin-bottom: 50px;
@@ -1469,15 +1475,17 @@ footer{
     }
     .interior-text>h2{
         font-size: 36px;
+        margin-left: -15px;
     }
     .interior-text>p{
-        font-size: 10px;
+        font-size: 12px;
+        line-height: 16px;
     }
     .interior-inner-text>h3{
         font-size: 16px;
     }
     .interior-inner-text>p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .interior-main-text3 {
         left: 35%;
