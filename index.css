@@ -898,6 +898,7 @@ footer{
     width: 1220px;
     margin: 0 auto;
 }
+
 @media screen and (max-width:1038px) {
     .slider{
         overflow: hidden;
@@ -1010,6 +1011,7 @@ footer{
     }
     .try-inner-img{
         margin-top: 40px;
+        margin-left: 50px;
     }
     .try-main-text1{
         display: none;
